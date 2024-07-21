@@ -20,6 +20,8 @@ form {
 input {
 	justify-self: center;
 	border: 2px solid;
+	user-select: all;
+	-webkit-user-select: all;
 }
 
 button {
@@ -27,8 +29,6 @@ button {
 }
 
 #macolon {
-	user-select: all;
-	-webkit-user-select: all;
 	background-color: var(--color-disabled);
 	cursor: text;
 }
