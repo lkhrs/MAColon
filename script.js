@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	function inputHandler(event) {
 		let inputString = event.target.value;
+		inputString = inputString.replace(/[^a-zA-Z0-9]/g, "");
 		let formattedString = addColons(inputString);
 		macolon.value = formattedString;
 	}
