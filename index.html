@@ -5,14 +5,17 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>macalon: Add colons to MAC string</title>
+		<link rel="stylesheet" href="style.css" />
 		<script src="script.js"></script>
 	</head>
 	<body>
 		<form>
 			<label for="mac">Enter MAC:</label>
-			<input type="text" id="mac" />
+			<input type="text" id="mac" autocorrect="off" />
+			<label>Result:</label>
 			<input type="text" id="macolon" readonly />
 			<button type="button" id="copy">Copy to clipboard</button>
+			<button type="reset">Reset</button>
 		</form>
 	</body>
 </html>
