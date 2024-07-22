@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 			formattedString += inputString.substr(i, 2);
 		}
+		formattedString = formattedString.toLowerCase();
 		return formattedString;
 	}
 
