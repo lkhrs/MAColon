@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	let mac = document.querySelector("#mac");
 	let macolon = document.querySelector("#macolon");
 	let copyBtn = document.querySelector("#copy");
+	let resetBtn = document.querySelector("#reset")
 
 	/**
 	 * addColons returns a string with colons added every two characters.
@@ -34,4 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	mac.addEventListener("input", inputHandler);
 	copyBtn.addEventListener("click", clipboard);
+	resetBtn.addEventListener("click", () => mac.focus())
+
+	mac.focus()
 });
